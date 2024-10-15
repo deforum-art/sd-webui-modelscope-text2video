@@ -14,3 +14,8 @@ function submit_txt2vid(){
 
     return res
 }
+
+function setSubmitButtonsVisibility(tabname, showInterrupt, showSkip, showInterrupting) {
+    gradioApp().getElementById(tabname + '_interrupt').style.display = showInterrupt ? "block" : "none";
+    gradioApp().getElementById(tabname + '_skip').style.display = showSkip ? "block" : "none";
+}

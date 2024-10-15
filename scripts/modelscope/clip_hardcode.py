@@ -150,7 +150,7 @@ class FrozenOpenCLIPEmbedder(torch.nn.Module):
         Returns the list and the total number of tokens in the prompt.
         """
 
-        if opts.enable_emphasis:
+        if hasattr(opts, 'enable_emphasis') and opts.enable_emphasis:
             parsed = prompt_parser.parse_prompt_attention(line)
         else:
             parsed = [[line, 1.0]]
