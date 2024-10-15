@@ -96,7 +96,7 @@ Download the following files from the [original HuggingFace repository](https://
 - open_clip_pytorch_model.bin
 - text2video_pytorch_model.pth
 
-And put them in `stable-diffusion-webui/models/ModelScope/t2v`. Create those 2 folders if they are missing. 
+And put them in `stable-diffusion-webui/models/text2video/ModelScope`. Create those 2 folders if they are missing. 
 
 ### VideoCrafter
 
@@ -112,7 +112,7 @@ To utilize a fine-tuned model here, use [this script](https://github.com/Exponen
 
 **ZeroScope v2**
 
-Trained by @cerspense on high quality YouTube videos. Download the files from the folder named `zs2_XL` at [cerspense/zeroscope_v2_XL](https://huggingface.co/cerspense/zeroscope_v2_XL/tree/main/zs2_XL) and then add the missing `VQGAN_autoencoder.pth` and `configuration.json` from [any other ModelScope model](https://huggingface.co/kabachuha/modelscope-damo-text2video-pruned-weights/tree/main).
+Trained by @cerspense on high quality YouTube videos. Download the files from the folder named `zs2_XL` at [cerspense/zeroscope_v2_XL](https://huggingface.co/cerspense/zeroscope_v2_XL/tree/main/zs2_XL) and then add the missing `VQGAN_autoencoder.pth` and `configuration.json` from [any other ModelScope model](https://huggingface.co/kabachuha/modelscope-damo-text2video-pruned-weights/tree/main) and put them in `stable-diffusion-webui/models/text2video/ZeroScope_v2_XL`.
 
 https://github.com/kabachuha/sd-webui-text2video/assets/14872007/6fa39221-3608-415e-b8ce-04a2bad11d30
 
@@ -124,9 +124,11 @@ https://github.com/kabachuha/sd-webui-text2video/assets/14872007/ff01c6cb-0000-4
 
 To download the plug-and-play weights for the extension use this link https://huggingface.co/kabachuha/potat1-with-text-encoder-original-format.
 
+Put these files in in `stable-diffusion-webui/models/text2video/Potat1`.
+
 **Animov-0.1**
 
-[Animov-0.1 by strangeman3107](https://huggingface.co/datasets/strangeman3107/animov-0.1). The converted weights for this model reside [here](https://huggingface.co/kabachuha/animov-0.1-modelscope-original-format).
+[Animov-0.1 by strangeman3107](https://huggingface.co/datasets/strangeman3107/animov-0.1). The converted weights for this model reside [here](https://huggingface.co/kabachuha/animov-0.1-modelscope-original-format). Put these files in in `stable-diffusion-webui/models/text2video/Animov-0.1`.
 
 https://user-images.githubusercontent.com/14872007/232611542-600cec38-d944-4530-bc5c-3595a115c2be.mp4
 
